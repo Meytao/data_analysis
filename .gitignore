@@ -1,0 +1,21 @@
+# Ignore everything
+*
+
+# But not code/ and README.md
+!code/
+!README.md
+!docs/
+
+# But not docs/ subfolders
+docs/*
+!docs/*.md
+
+# Ignore code subfolders except code/data and .ipynb files
+code/*
+!code/data/
+!code/*.ipynb
+
+# Ignore everything in code/data except csv and json files
+code/data/*
+!code/data/*.csv
+!code/data/*.json
